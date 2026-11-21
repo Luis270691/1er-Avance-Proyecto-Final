@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=login.html">
+  <title>Home | Backoffice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <p class="logo">Backoffice</p>
+    <div class="user">
+      <span class="avatar" aria-hidden="true">AD</span>
+      <a href="login.html">Salir</a>
+    </div>
+  </header>
+
+  <main class="content">
+    <h1>Panel principal</h1>
+    <p class="subtitle">Resumen de tu actividad.</p>
+
+    <section class="stats" aria-label="Resumen">
+      <article class="stat"><p>Pedidos</p><strong>128</strong></article>
+      <article class="stat"><p>Clientes</p><strong>54</strong></article>
+      <article class="stat"><p>Ingresos</p><strong>$12,400</strong></article>
+    </section>
+
+    <section class="panel">
+      <h2>Pedidos recientes</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Pedido</th><th>Cliente</th><th>Total</th><th>Estado</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>#1042</td><td>María López</td><td>$320</td><td><span class="badge">Entregado</span></td></tr>
+            <tr><td>#1041</td><td>Carlos Ruiz</td><td>$180</td><td><span class="badge pending">Pendiente</span></td></tr>
+            <tr><td>#1040</td><td>Ana Torres</td><td>$540</td><td><span class="badge">Entregado</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <noscript><p>Redirigiendo… <a href="login.html">Ir a iniciar sesión</a></p></noscript>
+  </main>
+</body>
+</html>
