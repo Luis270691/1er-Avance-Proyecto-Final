@@ -15,7 +15,7 @@
       <div class="user">
         <span class="avatar" id="avatar" aria-hidden="true"></span>
         <span class="user-name" id="user-name"></span>
-        <button class="btn btn-outline inline" id="logout" type="button">Salir</button>
+        <button class="btn btn-outline inline" id="logout" type="button">Cerrar sesión</button>
       </div>
     </header>
 
@@ -28,15 +28,16 @@
         <button class="btn inline" id="add-btn" type="button">+ Agregar proyecto</button>
       </div>
 
-      <section class="projects" id="projects" aria-label="Proyectos">
-        <p class="empty">Aún no tienes proyectos. Usa el botón "Agregar proyecto" para crear el primero.</p>
-      </section>
+      <p id="status" class="alert" role="status" hidden></p>
+      <p id="empty" class="empty" hidden>Aún no tienes proyectos. Usa el botón "Agregar proyecto" para crear el primero.</p>
+      <section class="projects" id="projects" aria-label="Proyectos"></section>
     </main>
   </div>
 
   <dialog id="project-dialog" aria-labelledby="dialog-title">
     <form id="project-form">
       <h2 id="dialog-title">Agregar proyecto</h2>
+      <p id="form-alert" class="alert" role="alert" hidden></p>
       <div class="field">
         <label for="title">Título</label>
         <input id="title" name="title" type="text" required>
@@ -56,7 +57,7 @@
 
       <div class="actions">
         <button class="btn btn-outline inline" id="cancel-btn" type="button">Cancelar</button>
-        <button class="btn inline" type="submit">Guardar</button>
+        <button class="btn inline" id="save-btn" type="submit">Guardar</button>
       </div>
     </form>
   </dialog>
@@ -66,10 +67,10 @@
       <h2 class="project-title"></h2>
       <p class="project-desc"></p>
       <ul class="tags"></ul>
-      <a class="project-link" href="#" target="_blank" rel="noopener">Ver repositorio</a>
+      <a class="project-link" target="_blank" rel="noopener">Ver repositorio</a>
       <div class="actions">
-        <button class="btn btn-outline inline" type="button">Actualizar</button>
-        <button class="btn btn-danger inline" type="button">Eliminar</button>
+        <button class="btn btn-outline inline" type="button" data-action="edit">Actualizar</button>
+        <button class="btn btn-danger inline" type="button" data-action="delete">Eliminar</button>
       </div>
     </article>
   </template>

@@ -196,6 +196,7 @@ textarea { resize: vertical; min-height: 6rem; }
 
 .alert { margin: 0 0 1rem; padding: .7rem .85rem; font-size: .9rem; border-radius: 8px; }
 .alert.error { color: #912018; background: #fde8e6; }
+.alert.info { color: var(--muted); background: var(--bg); }
 .alert.success { color: var(--brand-dark); background: var(--brand-soft); }
 
 .user-name { display: none; font-weight: 600; }
